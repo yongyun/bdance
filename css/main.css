@@ -132,3 +132,13 @@ header ul li a {
 	font-size: 25px;
 }
 
+.social-item {
+	margin-left: 20px;
+}
+
+.social-item a {
+	padding: 0;
+}
+.social-item-main {
+	width: 50px;
+}
