@@ -106,11 +106,10 @@ header ul li a {
 }
 .logo {
     float: left;
-    width: 50px;
-    margin: 20px;
+    width: 40px;
+    margin: 25px;
     z-index: 9999;
     position: fixed;
-    bottom: 0;
 }
 #slider {
 	width: 100%;
@@ -141,4 +140,14 @@ header ul li a {
 }
 .social-item-main {
 	width: 50px;
+}
+
+.copyright {
+	color: #fff;
+	font-size: 9px;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
 }
