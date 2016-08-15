@@ -155,3 +155,34 @@ header ul li a {
 .prevIcn , .nextIcn {
 	width: 13px;
 }
+
+.imgfit {
+	margin:0;
+    height:100%;
+    overflow:hidden;
+}
+
+.imgfit img {
+	min-height:100%;
+    min-width:100%;
+    height:auto;
+    width: 100%;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
+}
+
+@media screen and (max-width: 1100px) {
+	.imgfit img {
+	    display: block;
+	    height: 100vh;
+	    width: auto;
+	}
+@media screen and (max-height: 700px) {
+    .imgfit img {
+	    display: block;
+	    height: auto;
+	    width: auto;
+	}
+}

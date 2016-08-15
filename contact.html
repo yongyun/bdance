@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/fxfullwidth.css" />
+		<link rel="stylesheet" type="text/css" href="css/head.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!-- contact --><link rel="stylesheet" type="text/css" href="css/contact.css"><!-- contact -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/responsive-nav.js"></script>
+	</head>	
+	<body>
+	<a target="_blank" href="index.html"><img class="logo" src="img/logow.png" alt="#"></a>
+	<header id="header" class="fxFade">
+			<a target="_blank" href="index.html"><img class="logo" src="img/logow.png" alt="#"></a>
+			<nav class="nav-collapse">
+				<ul>
+					<li class="menu-item active"><a href="About.html">About us</a></li>
+					<li class="menu-item"><a href="#Works">Works</a></li>
+					<li class="menu-item"><a href="#">News</a></li>
+					<li class="menu-item"><a href="#">Contact us</a></li>
+					<li class="menu-item social">
+							<span class="social-item-main"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+							<span class="social-item-main"><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></span>
+							<span class="social-item-main" aria-hidden="true"><a href="#">AxE</a></span>
+					</li>
+					<!-- <li class="menu-item social">
+						<a class= "language" aria-hidden="true" href="#">En</a>
+						<Span>/</Span>
+						<a class= "language" aria-hidden="true" href="#">Fr</a>
+					</li> -->
+				</ul>
+				<!-- full screen -->
+				<ul id="fv">
+					<li>
+					 	<ul>
+					 		<li class="social-item"><a href="https://www.facebook.com/tsaipocheng/?fref=ts"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					     	<li class="social-item"><a href="https://vimeo.com/bdancetw"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+					     	<li class="social-item"><a href="http://www.axearts.org" aria-hidden="true">AxE</a></li>
+					    </ul>
+					</li>
+					<!-- <li class="menu-item">
+						<ul>
+							<li><a class= "language" href="#">En</a></li>
+							<li>/</li>
+						 	<li><a class= "language" href="#">Fr</a></li>
+						</ul>
+					</li> -->
+				</ul>
+				<!-- full screen -->
+			</nav>
+		</header>
+			<div class="container">
+				<div class="panel panel-default" style="margin:0 auto;width:500px">
+					<div class="panel-heading">
+					</div>
+					<div class="panel-body">
+						<form name="contactform" method="post" action="http://wedding-space.net/01_admin_resources/blog/contact_form/mailer.php" class="form-horizontal" role="form">
+							<div class="form-group">
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10">
+									<textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..."></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-offset-2 col-lg-10">
+									<button type="submit" class="btn btn-default">
+										Send Message
+									</button>
+								</div>
+							</div>
+						</form>
+						<div class="or"><p>or</p></div>
+						<div class="admin-info">
+							<p>Consultant for International Developments</p>
+							<p>AxE Arts Management/ Hsin-Yi Chang</p>
+							<p>Tel. : +49(0)176 3921 3041</p>
+							<p>Mail : axe.artco&#64;gmail.com</p>
+						</div>
+						<div class="admin-info">
+							<p>Production - Administration : Tzu-Yin Hsu</p>
+							<p>Tel. : +886972-353-955</p>
+							<p>bdance20143&#64;gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!-- conslide -->
+	<div id="conslide">
+	   <div class="imgfit">
+	     <img  src="img/3.jpg" alt="img03"/>
+	   </div>
+	   <div class="imgfit">
+	     <img src="img/4.jpg" alt="img04"/>
+	   </div>
+	   <div class="imgfit">
+	     <img src="img/5.jpg" alt="img05"/>
+	   </div>
+	</div>
+	<footer>
+			<p class="copyright">Copyright &copy; 2016 B.DANCE . All rights reserved.</p>
+		</footer>
+	<!-- conslide -->
+		<script src="js/classie.js"></script>
+		<script src="js/fastclick.js"></script>
+   	 	<script src="js/scroll.js"></script>
+    	<script src="js/fixed-responsive-nav.js"></script>
+    	<!-- contact us -->	
+		<script type="text/javascript">
+			$("#conslide > div:gt(0)").hide();
+
+		setInterval(function() { 
+		  $('#conslide > div:first')
+		    .fadeOut(5000)
+		    .next()
+		    .fadeIn(5000)
+		    .end()
+		    .appendTo('#conslide');
+		},  6000);
+		</script>
+		<!-- contact us -->
+	</body>
+</html>	

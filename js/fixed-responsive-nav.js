@@ -143,33 +143,33 @@
 
     // When a navigation item is tapped, select it and begin scrolling
     forEach(links, function (i, el) {
-      links[i].addEventListener("click", function (e) {
-        e.preventDefault();
-        wasNavigationTapped = true;
+      // links[i].addEventListener("click", function (e) {
+      //   e.preventDefault();
+      //   wasNavigationTapped = true;
 
-        // Select right navigation item (we are passing which one to select "i")
-        selectActiveMenuItem(i);
+      //   // Select right navigation item (we are passing which one to select "i")
+      //   selectActiveMenuItem(i);
 
-        // Show the URL of the section on the address bar
-        var thisID = this.getAttribute("href").replace("#", ""),
-          pane = document.getElementById(thisID);
+      //   // Show the URL of the section on the address bar
+      //   var thisID = this.getAttribute("href").replace("#", ""),
+      //     pane = document.getElementById(thisID);
 
-        // If the URL isn't "#home", change it
-        if (thisID !== "home") {
-          pane.removeAttribute("id");
-          location.hash = "#" + thisID;
-          pane.setAttribute("id", thisID);
+      //   // If the URL isn't "#home", change it
+      //   if (thisID !== "home") {
+      //     pane.removeAttribute("id");
+      //     location.hash = "#" + thisID;
+      //     pane.setAttribute("id", thisID);
 
-        // If the URL is "#home", remove hash from the URL
-        } else {
-          if (history.pushState) {
-            history.pushState("", document.title, window.location.pathname);
-          }
-        }
+      //   // If the URL is "#home", remove hash from the URL
+      //   } else {
+      //     if (history.pushState) {
+      //       history.pushState("", document.title, window.location.pathname);
+      //     }
+      //   }
 
-        // Clear wasNavigationTapped check
-        clearTapCheck();
-      }, false);
+      //   // Clear wasNavigationTapped check
+      //   clearTapCheck();
+      // }, false);
     });
 
   }

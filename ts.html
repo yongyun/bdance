@@ -1,0 +1,53 @@
+<!-- Simple Autoplay conslide
+-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<style type="text/css">
+	body {
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+
+#sampletext {
+  position: absolute; 
+  font : italic bold 60px arial;
+  color : #aaaaaa;
+  margin-top : 200px;
+}
+
+
+#conslide > div { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+}
+</style>
+
+<body>
+<div id="conslide">
+   <div>
+     <img src="http://paulmarique.be/dropbox/img/01.jpg">
+   </div>
+   <div>
+     <img src="http://paulmarique.be/dropbox/img/02.jpg">
+   </div>
+</div>
+
+
+<script type="text/javascript">
+	$("#conslide > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#conslide > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#conslide');
+},  3000);
+</script>
+
+</body>
