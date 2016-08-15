@@ -132,11 +132,18 @@
 .component-fullwidth nav a.prev {
     z-index: 9999;
     left: 20px;
+    transition: opacity .5s;
 }
-
+ 
 .component-fullwidth nav a.next {
     z-index: 9999;
     right: 20px;
+    transition: opacity .5s;
+}
+
+.component-fullwidth nav a.prev:hover, 
+.component-fullwidth nav a.next:hover {
+    opacity: .5;
 }
 
 .component nav a::before {

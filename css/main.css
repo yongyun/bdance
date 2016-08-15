@@ -151,3 +151,7 @@ header ul li a {
 	width: 100%;
 	z-index: 9999;
 }
+
+.prevIcn , .nextIcn {
+	width: 13px;
+}
