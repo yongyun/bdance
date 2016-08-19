@@ -155,6 +155,12 @@ h6 {
 	display: inline-block;
 }
 
+@media screen and (max-width: 475px) {
+	.con2{
+		width: 100%;
+	}
+}
+
 .con2 img{
 	width: 150px;
 	margin: 70px auto;
@@ -256,4 +262,12 @@ h6 {
 
 .sec-media .component-fullwidth { 
 	background: #fff;
+}
+
+.media-title {
+	margin-bottom: 0;
+}
+
+.sec-media .component-fullwidth nav a {
+	color: #000;
 }
